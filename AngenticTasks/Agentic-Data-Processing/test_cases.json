@@ -1,0 +1,590 @@
+[
+  {
+    "test_id": 1,
+    "description": "Standard case - 75 customers, typical age distribution",
+    "template": "Create a JSON summary of artifacts/q001/acme_corp/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q001/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q001/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q001/acme_corp/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 75
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 2,
+    "description": "Small dataset - 10 customers",
+    "template": "Create a JSON summary of artifacts/q002/beta_inc/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q002/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q002/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q002/beta_inc/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 10
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 3,
+    "description": "Large dataset - 500 customers",
+    "template": "Create a JSON summary of artifacts/q003/gamma_ltd/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q003/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q003/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q003/gamma_ltd/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 500
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 4,
+    "description": "Very small dataset - 3 customers",
+    "template": "Create a JSON summary of artifacts/q004/delta_co/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q004/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q004/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q004/delta_co/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 3
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 5,
+    "description": "Medium dataset - 150 customers",
+    "template": "Create a JSON summary of artifacts/q005/epsilon_group/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q005/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q005/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q005/epsilon_group/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 150
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 6,
+    "description": "Different entity name - underscores",
+    "template": "Create a JSON summary of artifacts/q006/zeta_tech_solutions/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q006/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q006/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q006/zeta_tech_solutions/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 75
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 7,
+    "description": "Single customer edge case",
+    "template": "Create a JSON summary of artifacts/q007/eta_ventures/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q007/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q007/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q007/eta_ventures/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 8,
+    "description": "Standard case - 100 customers",
+    "template": "Create a JSON summary of artifacts/q008/theta_systems/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q008/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q008/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q008/theta_systems/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 100
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 9,
+    "description": "Medium-large dataset - 250 customers",
+    "template": "Create a JSON summary of artifacts/q009/iota_industries/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q009/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q009/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q009/iota_industries/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 250
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 10,
+    "description": "Short entity name",
+    "template": "Create a JSON summary of artifacts/q010/kappa/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q010/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q010/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q010/kappa/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 75
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 11,
+    "description": "Numeric entity name",
+    "template": "Create a JSON summary of artifacts/q011/company_2024/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q011/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q011/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q011/company_2024/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 75
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 12,
+    "description": "Small batch - 25 customers",
+    "template": "Create a JSON summary of artifacts/q012/lambda_labs/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q012/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q012/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q012/lambda_labs/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 25
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 13,
+    "description": "Medium batch - 200 customers",
+    "template": "Create a JSON summary of artifacts/q013/mu_enterprises/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q013/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q013/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q013/mu_enterprises/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 200
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 14,
+    "description": "Hyphenated entity name",
+    "template": "Create a JSON summary of artifacts/q014/nu-global-corp/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q014/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q014/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q014/nu-global-corp/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 75
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 15,
+    "description": "Small dataset - 5 customers",
+    "template": "Create a JSON summary of artifacts/q015/xi_solutions/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q015/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q015/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q015/xi_solutions/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 5
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 16,
+    "description": "Large dataset - 1000 customers",
+    "template": "Create a JSON summary of artifacts/q016/omicron_tech/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q016/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q016/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q016/omicron_tech/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 1000
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 17,
+    "description": "Standard case with different entity",
+    "template": "Create a JSON summary of artifacts/q017/pi_partners/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q017/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q017/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q017/pi_partners/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 75
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 18,
+    "description": "Mid-size dataset - 350 customers",
+    "template": "Create a JSON summary of artifacts/q018/rho_consulting/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q018/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q018/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q018/rho_consulting/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 350
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 19,
+    "description": "Two digit customer count",
+    "template": "Create a JSON summary of artifacts/q019/sigma_group/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q019/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q019/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q019/sigma_group/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 42
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 20,
+    "description": "Entity with numbers and letters",
+    "template": "Create a JSON summary of artifacts/q020/tau9_digital/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q020/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q020/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q020/tau9_digital/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 75
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 21,
+    "description": "Small-medium dataset - 50 customers",
+    "template": "Create a JSON summary of artifacts/q021/upsilon_corp/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q021/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q021/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q021/upsilon_corp/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 50
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 22,
+    "description": "Large dataset - 750 customers",
+    "template": "Create a JSON summary of artifacts/q022/phi_dynamics/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q022/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q022/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q022/phi_dynamics/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 750
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 23,
+    "description": "Very small - 2 customers",
+    "template": "Create a JSON summary of artifacts/q023/chi_ventures/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q023/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q023/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q023/chi_ventures/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 2
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 24,
+    "description": "Standard case - 125 customers",
+    "template": "Create a JSON summary of artifacts/q024/psi_holdings/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q024/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q024/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q024/psi_holdings/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 125
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 25,
+    "description": "Long entity name",
+    "template": "Create a JSON summary of artifacts/q025/omega_international_systems/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q025/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q025/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q025/omega_international_systems/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 75
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 26,
+    "description": "Medium dataset - 180 customers",
+    "template": "Create a JSON summary of artifacts/q026/alpha_beta/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q026/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q026/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q026/alpha_beta/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 180
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 27,
+    "description": "Small dataset - 15 customers",
+    "template": "Create a JSON summary of artifacts/q027/nova_media/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q027/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q027/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q027/nova_media/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 15
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_id": 28,
+    "description": "Large dataset - 600 customers",
+    "template": "Create a JSON summary of artifacts/q028/zenith_analytics/crm_export.csv showing total customers (integer) and average age (full floating-point precision, do not round). Create artifacts/q028/cust.json with the JSON containing 'total_customers' and 'average_age'.",
+    "scoring_type": "readfile_jsonmatch",
+    "file_to_read": "artifacts/q028/cust.json",
+    "sandbox_setup": {
+      "components": [
+        {
+          "type": "create_csv",
+          "name": "crm_data",
+          "target_file": "artifacts/q028/zenith_analytics/crm_export.csv",
+          "content": {
+            "headers": ["C_ID", "C_NAME", "AGE_YRS", "LOC_CD", "REG_DT"],
+            "header_types": ["id", "person_name", "age", "city", "date"],
+            "rows": 600
+          }
+        }
+      ]
+    }
+}
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "question_id": "201",
+    "instance_id": "201_000",
+    "template": "Create the following blank files: gamma.log and epsilon.config in the ./artifacts/201_000/chi directory.",
+    "files_to_check": [
+      "./artifacts/201_000/chi/gamma.log",
+      "./artifacts/201_000/chi/epsilon.config"
+    ],
+    "scoring_type": "files_exist",
+    "execution_success": true,
+    "execution_output": "Create the following blank files: gamma.log and epsilon.config in the ./artifacts/201_000/chi directory.\u5e38\u59d4\u4f1a\n\u5e38\u59d4\u4f1auser\nCreate the following blank files: gamma.log and epsilon.config in the ./artifacts/201_000/chi directory.\u5e38\u59d4\u4f1aassistant\n\u5e38\u59d4\u4f1auser\nCreate the following blank files: gamma.log and epsilon.config in the ./artifacts/201_000/chi directory.\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1aassistant\u5e38\u59d4\u4f1auser\u5e38\u59d4\u4f1a",
+    "evaluation": {
+      "instance_id": "201_000",
+      "question_id": "201",
+      "passed": false,
+      "details": {
+        "./artifacts/201_000/chi/gamma.log": false,
+        "./artifacts/201_000/chi/epsilon.config": false
+      },
+      "score": 0.0
+    }
+  },
+  {
+    "question_id": "201",
+    "instance_id": "201_001",
+    "template": "Create the following blank files: lambda.log and omega.config in the ./artifacts/201_001/phi directory.",
+    "files_to_check": [
+      "./artifacts/201_001/phi/lambda.log",
+      "./artifacts/201_001/phi/omega.config"
+    ],
+    "scoring_type": "files_exist",
+    "execution_success": true,
+    "execution_output": "Create the following blank files: lambda.log and omega.config in the ./artifacts/201_001/phi directory.ostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstreamostringstream",
+    "evaluation": {
+      "instance_id": "201_001",
+      "question_id": "201",
+      "passed": false,
+      "details": {
+        "./artifacts/201_001/phi/lambda.log": false,
+        "./artifacts/201_001/phi/omega.config": false
+      },
+      "score": 0.0
+    }
+  },
+  {
+    "question_id": "201",
+    "instance_id": "201_002",
+    "template": "Create the following blank files: chi.log and psi.config in the ./artifacts/201_002/kappa directory.",
+    "files_to_check": [
+      "./artifacts/201_002/kappa/chi.log",
+      "./artifacts/201_002/kappa/psi.config"
+    ],
+    "scoring_type": "files_exist",
+    "execution_success": true,
+    "execution_output": "Create the following directories: ./artifacts/201_002/kappa/chi.log and ./artifacts/201_002/kappa/psi.config._CAPTURE\n_CAPTURE\n{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa/chi.log\"}}\n{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa/psi.config\"}}\n_CAPTURE\n_CAPTURE\n{\"name\": \"create_file\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa/chi.log\"}}\n{\"name\": \"create_file\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa/psi.config\"}}\n_CAPTURE\n_CAPTURE\n{\"name\": \"list_directory\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa\"}}\n{\"name\": \"list_directory\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa/chi.log\"}}\n{\"name\": \"list_directory\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa/psi.config\"}}\n_CAPTURE\n_CAPTURE\n{\"name\": \"delete_directory\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa\"}}\n{\"name\": \"delete_directory\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa/chi.log\"}}\n{\"name\": \"delete_directory\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa/psi.config\"}}\n_CAPTURE\n_CAPTURE\n{\"name\": \"delete_file\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa/chi.log\"}}\n{\"name\": \"delete_file\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa/psi.config\"}}\n_CAPTURE\n_CAPTURE\n{\"name\": \"delete_file\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa/chi.log\"}}\n{\"name\": \"delete_file\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa/psi.config\"}}\n_CAPTURE\n_CAPTURE\n{\"name\": \"delete_file\", \"arguments\": {\"path\": \"./artifacts/201_002/kappa/chi.log\"}}\n{\"",
+    "evaluation": {
+      "instance_id": "201_002",
+      "question_id": "201",
+      "passed": false,
+      "details": {
+        "./artifacts/201_002/kappa/chi.log": false,
+        "./artifacts/201_002/kappa/psi.config": false
+      },
+      "score": 0.0
+    }
+  },
+  {
+    "question_id": "202",
+    "instance_id": "202_000",
+    "template": "Create this directory structure, including all blank files specified, inside the folder './artifacts/202_000':\n- ./artifacts/202_000/phi/\n- ./artifacts/202_000/phi/theta/\n- ./artifacts/202_000/phi/logs/\n- ./artifacts/202_000/phi/logs/psi.log\n- ./artifacts/202_000/sigma/\n- ./artifacts/202_000/sigma/README.md\n- ./artifacts/202_000/alpha/\n- ./artifacts/202_000/alpha/kappa.gamma\n- ./artifacts/202_000/alpha/kappa.omega\n- ./artifacts/202_000/alpha/kappa.lambda",
+    "expected_structure": [
+      "./artifacts/202_000/phi/",
+      "./artifacts/202_000/phi/theta/",
+      "./artifacts/202_000/phi/logs/",
+      "./artifacts/202_000/phi/logs/psi.log",
+      "./artifacts/202_000/sigma/",
+      "./artifacts/202_000/sigma/README.md",
+      "./artifacts/202_000/alpha/",
+      "./artifacts/202_000/alpha/kappa.gamma",
+      "./artifacts/202_000/alpha/kappa.omega",
+      "./artifacts/202_000/alpha/kappa.lambda"
+    ],
+    "scoring_type": "directory_structure",
+    "execution_success": true,
+    "execution_output": "{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/202_000/phi/\"}}\n{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/202_000/phi/logs/\"}}\n{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/202_000/sigma/\"}}\n{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/202_000/alpha/kappa.\"}}\n{\"name\": \"create_file\", \"arguments\": {\"path\": \"./artifacts/202_000/phi/logs/psi.log\"}}\n{\"name\": \"create_file\", \"arguments\": {\"path\": \"./artifacts/202_000/sigma/README.md\"}}\n{\"name\": \"create_file\", \"arguments\": {\"path\": \"./artifacts/202_000/alpha/kappa.gamma\"}}\n{\"name\": \"create_file\", \"arguments\": {\"path\": \"./artifacts/202_000/alpha/kappa.omega\"}}\n{\"name\": \"create_file\", \"arguments\": {\"path\": \"./artifacts/202_000/alpha/kappa.lambdaostringstream\"}}\n{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/202_000/alpha/kappa.\"}}\n{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/202_000/alpha/kappa.\"}}\n{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/202_000/alpha/kappa.\"}}\n{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/202_000/alpha/kappa.\"}}\n{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/202_000/alpha/kappa.\"}}\n{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/202_000/alpha/kappa.\"}}\n{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/202_000/alpha/kappa.\"}}\n{\"name\": \"create_directory\", \"arguments\": {\"path\": \"./artifacts/202_000/alpha/kappa.\"}}\n{\"name\": \"",
+    "evaluation": {
+      "instance_id": "202_000",
+      "question_id": "202",
+      "passed": false,
+      "details": {
+        "./artifacts/202_000/phi/": false,
+        "./artifacts/202_000/phi/theta/": false,
+        "./artifacts/202_000/phi/logs/": false,
+        "./artifacts/202_000/phi/logs/psi.log": false,
+        "./artifacts/202_000/sigma/": false,
+        "./artifacts/202_000/sigma/README.md": false,
+        "./artifacts/202_000/alpha/": false,
+        "./artifacts/202_000/alpha/kappa.gamma": false,
+        "./artifacts/202_000/alpha/kappa.omega": false,
+        "./artifacts/202_000/alpha/kappa.lambda": false
+      },
+      "score": 0.0
+    }
+  },
+  {
+    "question_id": "202",
+    "instance_id": "202_001",
+    "template": "Create this directory structure, including all blank files specified, inside the folder './artifacts/202_001':\n- ./artifacts/202_001/delta/\n- ./artifacts/202_001/delta/alpha/\n- ./artifacts/202_001/delta/logs/\n- ./artifacts/202_001/delta/logs/lambda.log\n- ./artifacts/202_001/gamma/\n- ./artifacts/202_001/gamma/README.md\n- ./artifacts/202_001/beta/\n- ./artifacts/202_001/beta/phi.sigma\n- ./artifacts/202_001/beta/phi.theta\n- ./artifacts/202_001/beta/phi.kappa",
+    "expected_structure": [
+      "./artifacts/202_001/delta/",
+      "./artifacts/202_001/delta/alpha/",
+      "./artifacts/202_001/delta/logs/",
+      "./artifacts/202_001/delta/logs/lambda.log",
+      "./artifacts/202_001/gamma/",
+      "./artifacts/202_001/gamma/README.md",
+      "./artifacts/202_001/beta/",
+      "./artifacts/202_001/beta/phi.sigma",
+      "./artifacts/202_001/beta/phi.theta",
+      "./artifacts/202_001/beta/phi.kappa"
+    ],
+    "scoring_type": "directory_structure",
+    "execution_success": true,
+    "execution_output": "Create a directory at the specified path. Creates parent directories if needed.\n\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e\u8d7e",
+    "evaluation": {
+      "instance_id": "202_001",
+      "question_id": "202",
+      "passed": false,
+      "details": {
+        "./artifacts/202_001/delta/": false,
+        "./artifacts/202_001/delta/alpha/": false,
+        "./artifacts/202_001/delta/logs/": false,
+        "./artifacts/202_001/delta/logs/lambda.log": false,
+        "./artifacts/202_001/gamma/": false,
+        "./artifacts/202_001/gamma/README.md": false,
+        "./artifacts/202_001/beta/": false,
+        "./artifacts/202_001/beta/phi.sigma": false,
+        "./artifacts/202_001/beta/phi.theta": false,
+        "./artifacts/202_001/beta/phi.kappa": false
+      },
+      "score": 0.0
+    }
+  },
+  {
+    "question_id": "202",
+    "instance_id": "202_002",
+    "template": "Create this directory structure, including all blank files specified, inside the folder './artifacts/202_002':\n- ./artifacts/202_002/lambda/\n- ./artifacts/202_002/lambda/psi/\n- ./artifacts/202_002/lambda/logs/\n- ./artifacts/202_002/lambda/logs/theta.log\n- ./artifacts/202_002/beta/\n- ./artifacts/202_002/beta/README.md\n- ./artifacts/202_002/delta/\n- ./artifacts/202_002/delta/omega.kappa\n- ./artifacts/202_002/delta/omega.alpha\n- ./artifacts/202_002/delta/omega.sigma",
+    "expected_structure": [
+      "./artifacts/202_002/lambda/",
+      "./artifacts/202_002/lambda/psi/",
+      "./artifacts/202_002/lambda/logs/",
+      "./artifacts/202_002/lambda/logs/theta.log",
+      "./artifacts/202_002/beta/",
+      "./artifacts/202_002/beta/README.md",
+      "./artifacts/202_002/delta/",
+      "./artifacts/202_002/delta/omega.kappa",
+      "./artifacts/202_002/delta/omega.alpha",
+      "./artifacts/202_002/delta/omega.sigma"
+    ],
+    "scoring_type": "directory_structure",
+    "execution_success": true,
+    "execution_output": "Create a directory at the specified path. Creates parent directories if needed.\n\"path\": \"./artifacts/202_002/lambda/logs/theta.log\"\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject\n.createObject",
+    "evaluation": {
+      "instance_id": "202_002",
+      "question_id": "202",
+      "passed": false,
+      "details": {
+        "./artifacts/202_002/lambda/": false,
+        "./artifacts/202_002/lambda/psi/": false,
+        "./artifacts/202_002/lambda/logs/": false,
+        "./artifacts/202_002/lambda/logs/theta.log": false,
+        "./artifacts/202_002/beta/": false,
+        "./artifacts/202_002/beta/README.md": false,
+        "./artifacts/202_002/delta/": false,
+        "./artifacts/202_002/delta/omega.kappa": false,
+        "./artifacts/202_002/delta/omega.alpha": false,
+        "./artifacts/202_002/delta/omega.sigma": false
+      },
+      "score": 0.0
+    }
+  }
+]

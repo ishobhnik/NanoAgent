@@ -1,0 +1,114 @@
+{
+    "q006/zeta_tech_solutions/crm_export.csv": {
+        "average_age": 53.07,
+        "total_customers": 75
+    },
+    "q014/nu-global-corp/crm_export.csv": {
+        "average_age": 53.76,
+        "total_customers": 75
+    },
+    "q019/sigma_group/crm_export.csv": {
+        "average_age": 48.76,
+        "total_customers": 42
+    },
+    "q017/pi_partners/crm_export.csv": {
+        "average_age": 47.72,
+        "total_customers": 75
+    },
+    "q001/acme_corp/crm_export.csv": {
+        "average_age": 52.84,
+        "total_customers": 75
+    },
+    "q013/mu_enterprises/crm_export.csv": {
+        "average_age": 49.17,
+        "total_customers": 200
+    },
+    "q002/beta_inc/crm_export.csv": {
+        "average_age": 56.7,
+        "total_customers": 10
+    },
+    "q005/epsilon_group/crm_export.csv": {
+        "average_age": 50.03,
+        "total_customers": 150
+    },
+    "q023/chi_ventures/crm_export.csv": {
+        "average_age": 59.0,
+        "total_customers": 2
+    },
+    "q010/kappa/crm_export.csv": {
+        "average_age": 50.53,
+        "total_customers": 75
+    },
+    "q016/omicron_tech/crm_export.csv": {
+        "average_age": 51.47,
+        "total_customers": 1000
+    },
+    "q022/phi_dynamics/crm_export.csv": {
+        "average_age": 51.14,
+        "total_customers": 750
+    },
+    "q012/lambda_labs/crm_export.csv": {
+        "average_age": 59.08,
+        "total_customers": 25
+    },
+    "q007/eta_ventures/crm_export.csv": {
+        "average_age": 33.0,
+        "total_customers": 1
+    },
+    "q011/company_2024/crm_export.csv": {
+        "average_age": 50.87,
+        "total_customers": 75
+    },
+    "q009/iota_industries/crm_export.csv": {
+        "average_age": 51.4,
+        "total_customers": 250
+    },
+    "q003/gamma_ltd/crm_export.csv": {
+        "average_age": 52.24,
+        "total_customers": 500
+    },
+    "q018/rho_consulting/crm_export.csv": {
+        "average_age": 51.19,
+        "total_customers": 350
+    },
+    "q028/zenith_analytics/crm_export.csv": {
+        "average_age": 51.35,
+        "total_customers": 600
+    },
+    "q020/tau9_digital/crm_export.csv": {
+        "average_age": 53.39,
+        "total_customers": 75
+    },
+    "q021/upsilon_corp/crm_export.csv": {
+        "average_age": 52.84,
+        "total_customers": 50
+    },
+    "q026/alpha_beta/crm_export.csv": {
+        "average_age": 51.58,
+        "total_customers": 180
+    },
+    "q015/xi_solutions/crm_export.csv": {
+        "average_age": 42.8,
+        "total_customers": 5
+    },
+    "q004/delta_co/crm_export.csv": {
+        "average_age": 74.33,
+        "total_customers": 3
+    },
+    "q024/psi_holdings/crm_export.csv": {
+        "average_age": 49.11,
+        "total_customers": 125
+    },
+    "q027/nova_media/crm_export.csv": {
+        "average_age": 61.13,
+        "total_customers": 15
+    },
+    "q008/theta_systems/crm_export.csv": {
+        "average_age": 53.85,
+        "total_customers": 100
+    },
+    "q025/omega_international_systems/crm_export.csv": {
+        "average_age": 53.79,
+        "total_customers": 75
+    }
+}

@@ -1,0 +1,582 @@
+[
+  {
+    "question_id": "201",
+    "instance_id": "201_000",
+    "template": "Create the following blank files: lambda.log and theta.config in the ./artifacts/201_000/alpha directory.",
+    "files_to_check": [
+      "./artifacts/201_000/alpha/lambda.log",
+      "./artifacts/201_000/alpha/theta.config"
+    ],
+    "scoring_type": "files_exist",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "201_000",
+      "question_id": "201",
+      "passed": true,
+      "details": {
+        "./artifacts/201_000/alpha/lambda.log": true,
+        "./artifacts/201_000/alpha/theta.config": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "201",
+    "instance_id": "201_001",
+    "template": "Create the following blank files: beta.log and sigma.config in the ./artifacts/201_001/theta directory.",
+    "files_to_check": [
+      "./artifacts/201_001/theta/beta.log",
+      "./artifacts/201_001/theta/sigma.config"
+    ],
+    "scoring_type": "files_exist",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "201_001",
+      "question_id": "201",
+      "passed": true,
+      "details": {
+        "./artifacts/201_001/theta/beta.log": true,
+        "./artifacts/201_001/theta/sigma.config": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "201",
+    "instance_id": "201_002",
+    "template": "Create the following blank files: gamma.log and epsilon.config in the ./artifacts/201_002/phi directory.",
+    "files_to_check": [
+      "./artifacts/201_002/phi/gamma.log",
+      "./artifacts/201_002/phi/epsilon.config"
+    ],
+    "scoring_type": "files_exist",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "201_002",
+      "question_id": "201",
+      "passed": true,
+      "details": {
+        "./artifacts/201_002/phi/gamma.log": true,
+        "./artifacts/201_002/phi/epsilon.config": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "201",
+    "instance_id": "201_003",
+    "template": "Create the following blank files: kappa.log and phi.config in the ./artifacts/201_003/zeta directory.",
+    "files_to_check": [
+      "./artifacts/201_003/zeta/kappa.log",
+      "./artifacts/201_003/zeta/phi.config"
+    ],
+    "scoring_type": "files_exist",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "201_003",
+      "question_id": "201",
+      "passed": true,
+      "details": {
+        "./artifacts/201_003/zeta/kappa.log": true,
+        "./artifacts/201_003/zeta/phi.config": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "201",
+    "instance_id": "201_004",
+    "template": "Create the following blank files: kappa.log and alpha.config in the ./artifacts/201_004/lambda directory.",
+    "files_to_check": [
+      "./artifacts/201_004/lambda/kappa.log",
+      "./artifacts/201_004/lambda/alpha.config"
+    ],
+    "scoring_type": "files_exist",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "201_004",
+      "question_id": "201",
+      "passed": true,
+      "details": {
+        "./artifacts/201_004/lambda/kappa.log": true,
+        "./artifacts/201_004/lambda/alpha.config": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "201",
+    "instance_id": "201_005",
+    "template": "Create the following blank files: beta.log and alpha.config in the ./artifacts/201_005/theta directory.",
+    "files_to_check": [
+      "./artifacts/201_005/theta/beta.log",
+      "./artifacts/201_005/theta/alpha.config"
+    ],
+    "scoring_type": "files_exist",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "201_005",
+      "question_id": "201",
+      "passed": true,
+      "details": {
+        "./artifacts/201_005/theta/beta.log": true,
+        "./artifacts/201_005/theta/alpha.config": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "201",
+    "instance_id": "201_006",
+    "template": "Create the following blank files: epsilon.log and phi.config in the ./artifacts/201_006/zeta directory.",
+    "files_to_check": [
+      "./artifacts/201_006/zeta/epsilon.log",
+      "./artifacts/201_006/zeta/phi.config"
+    ],
+    "scoring_type": "files_exist",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "201_006",
+      "question_id": "201",
+      "passed": true,
+      "details": {
+        "./artifacts/201_006/zeta/epsilon.log": true,
+        "./artifacts/201_006/zeta/phi.config": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "201",
+    "instance_id": "201_007",
+    "template": "Create the following blank files: phi.log and omega.config in the ./artifacts/201_007/beta directory.",
+    "files_to_check": [
+      "./artifacts/201_007/beta/phi.log",
+      "./artifacts/201_007/beta/omega.config"
+    ],
+    "scoring_type": "files_exist",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "201_007",
+      "question_id": "201",
+      "passed": true,
+      "details": {
+        "./artifacts/201_007/beta/phi.log": true,
+        "./artifacts/201_007/beta/omega.config": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "201",
+    "instance_id": "201_008",
+    "template": "Create the following blank files: kappa.log and lambda.config in the ./artifacts/201_008/epsilon directory.",
+    "files_to_check": [
+      "./artifacts/201_008/epsilon/kappa.log",
+      "./artifacts/201_008/epsilon/lambda.config"
+    ],
+    "scoring_type": "files_exist",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "201_008",
+      "question_id": "201",
+      "passed": true,
+      "details": {
+        "./artifacts/201_008/epsilon/kappa.log": true,
+        "./artifacts/201_008/epsilon/lambda.config": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "201",
+    "instance_id": "201_009",
+    "template": "Create the following blank files: omega.log and delta.config in the ./artifacts/201_009/zeta directory.",
+    "files_to_check": [
+      "./artifacts/201_009/zeta/omega.log",
+      "./artifacts/201_009/zeta/delta.config"
+    ],
+    "scoring_type": "files_exist",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "201_009",
+      "question_id": "201",
+      "passed": true,
+      "details": {
+        "./artifacts/201_009/zeta/omega.log": true,
+        "./artifacts/201_009/zeta/delta.config": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "202",
+    "instance_id": "202_000",
+    "template": "Create this directory structure, including all blank files specified, inside the folder './artifacts/202_000':\n- ./artifacts/202_000/gamma/\n- ./artifacts/202_000/gamma/kappa/\n- ./artifacts/202_000/gamma/logs/\n- ./artifacts/202_000/gamma/logs/omega.log\n- ./artifacts/202_000/lambda/\n- ./artifacts/202_000/lambda/README.md\n- ./artifacts/202_000/epsilon/\n- ./artifacts/202_000/epsilon/chi.csv\n- ./artifacts/202_000/epsilon/chi.xml\n- ./artifacts/202_000/epsilon/chi.conf",
+    "expected_structure": [
+      "./artifacts/202_000/gamma",
+      "./artifacts/202_000/gamma/kappa",
+      "./artifacts/202_000/gamma/logs",
+      "./artifacts/202_000/gamma/logs/omega.log",
+      "./artifacts/202_000/lambda",
+      "./artifacts/202_000/lambda/README.md",
+      "./artifacts/202_000/epsilon",
+      "./artifacts/202_000/epsilon/chi.csv",
+      "./artifacts/202_000/epsilon/chi.xml",
+      "./artifacts/202_000/epsilon/chi.conf"
+    ],
+    "scoring_type": "directory_structure",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "202_000",
+      "question_id": "202",
+      "passed": true,
+      "details": {
+        "./artifacts/202_000/gamma": true,
+        "./artifacts/202_000/gamma/kappa": true,
+        "./artifacts/202_000/gamma/logs": true,
+        "./artifacts/202_000/gamma/logs/omega.log": true,
+        "./artifacts/202_000/lambda": true,
+        "./artifacts/202_000/lambda/README.md": true,
+        "./artifacts/202_000/epsilon": true,
+        "./artifacts/202_000/epsilon/chi.csv": true,
+        "./artifacts/202_000/epsilon/chi.xml": true,
+        "./artifacts/202_000/epsilon/chi.conf": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "202",
+    "instance_id": "202_001",
+    "template": "Create this directory structure, including all blank files specified, inside the folder './artifacts/202_001':\n- ./artifacts/202_001/kappa/\n- ./artifacts/202_001/kappa/sigma/\n- ./artifacts/202_001/kappa/logs/\n- ./artifacts/202_001/kappa/logs/gamma.log\n- ./artifacts/202_001/psi/\n- ./artifacts/202_001/psi/README.md\n- ./artifacts/202_001/theta/\n- ./artifacts/202_001/theta/omega.csv\n- ./artifacts/202_001/theta/omega.yaml\n- ./artifacts/202_001/theta/omega.xml",
+    "expected_structure": [
+      "./artifacts/202_001/kappa",
+      "./artifacts/202_001/kappa/sigma",
+      "./artifacts/202_001/kappa/logs",
+      "./artifacts/202_001/kappa/logs/gamma.log",
+      "./artifacts/202_001/psi",
+      "./artifacts/202_001/psi/README.md",
+      "./artifacts/202_001/theta",
+      "./artifacts/202_001/theta/omega.csv",
+      "./artifacts/202_001/theta/omega.yaml",
+      "./artifacts/202_001/theta/omega.xml"
+    ],
+    "scoring_type": "directory_structure",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "202_001",
+      "question_id": "202",
+      "passed": true,
+      "details": {
+        "./artifacts/202_001/kappa": true,
+        "./artifacts/202_001/kappa/sigma": true,
+        "./artifacts/202_001/kappa/logs": true,
+        "./artifacts/202_001/kappa/logs/gamma.log": true,
+        "./artifacts/202_001/psi": true,
+        "./artifacts/202_001/psi/README.md": true,
+        "./artifacts/202_001/theta": true,
+        "./artifacts/202_001/theta/omega.csv": true,
+        "./artifacts/202_001/theta/omega.yaml": true,
+        "./artifacts/202_001/theta/omega.xml": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "202",
+    "instance_id": "202_002",
+    "template": "Create this directory structure, including all blank files specified, inside the folder './artifacts/202_002':\n- ./artifacts/202_002/sigma/\n- ./artifacts/202_002/sigma/phi/\n- ./artifacts/202_002/sigma/logs/\n- ./artifacts/202_002/sigma/logs/alpha.log\n- ./artifacts/202_002/beta/\n- ./artifacts/202_002/beta/README.md\n- ./artifacts/202_002/lambda/\n- ./artifacts/202_002/lambda/gamma.ini\n- ./artifacts/202_002/lambda/gamma.txt\n- ./artifacts/202_002/lambda/gamma.csv",
+    "expected_structure": [
+      "./artifacts/202_002/sigma",
+      "./artifacts/202_002/sigma/phi",
+      "./artifacts/202_002/sigma/logs",
+      "./artifacts/202_002/sigma/logs/alpha.log",
+      "./artifacts/202_002/beta",
+      "./artifacts/202_002/beta/README.md",
+      "./artifacts/202_002/lambda",
+      "./artifacts/202_002/lambda/gamma.ini",
+      "./artifacts/202_002/lambda/gamma.txt",
+      "./artifacts/202_002/lambda/gamma.csv"
+    ],
+    "scoring_type": "directory_structure",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "202_002",
+      "question_id": "202",
+      "passed": true,
+      "details": {
+        "./artifacts/202_002/sigma": true,
+        "./artifacts/202_002/sigma/phi": true,
+        "./artifacts/202_002/sigma/logs": true,
+        "./artifacts/202_002/sigma/logs/alpha.log": true,
+        "./artifacts/202_002/beta": true,
+        "./artifacts/202_002/beta/README.md": true,
+        "./artifacts/202_002/lambda": true,
+        "./artifacts/202_002/lambda/gamma.ini": true,
+        "./artifacts/202_002/lambda/gamma.txt": true,
+        "./artifacts/202_002/lambda/gamma.csv": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "202",
+    "instance_id": "202_003",
+    "template": "Create this directory structure, including all blank files specified, inside the folder './artifacts/202_003':\n- ./artifacts/202_003/gamma/\n- ./artifacts/202_003/gamma/delta/\n- ./artifacts/202_003/gamma/logs/\n- ./artifacts/202_003/gamma/logs/epsilon.log\n- ./artifacts/202_003/beta/\n- ./artifacts/202_003/beta/README.md\n- ./artifacts/202_003/omega/\n- ./artifacts/202_003/omega/sigma.json\n- ./artifacts/202_003/omega/sigma.csv\n- ./artifacts/202_003/omega/sigma.txt",
+    "expected_structure": [
+      "./artifacts/202_003/gamma",
+      "./artifacts/202_003/gamma/delta",
+      "./artifacts/202_003/gamma/logs",
+      "./artifacts/202_003/gamma/logs/epsilon.log",
+      "./artifacts/202_003/beta",
+      "./artifacts/202_003/beta/README.md",
+      "./artifacts/202_003/omega",
+      "./artifacts/202_003/omega/sigma.json",
+      "./artifacts/202_003/omega/sigma.csv",
+      "./artifacts/202_003/omega/sigma.txt"
+    ],
+    "scoring_type": "directory_structure",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "202_003",
+      "question_id": "202",
+      "passed": true,
+      "details": {
+        "./artifacts/202_003/gamma": true,
+        "./artifacts/202_003/gamma/delta": true,
+        "./artifacts/202_003/gamma/logs": true,
+        "./artifacts/202_003/gamma/logs/epsilon.log": true,
+        "./artifacts/202_003/beta": true,
+        "./artifacts/202_003/beta/README.md": true,
+        "./artifacts/202_003/omega": true,
+        "./artifacts/202_003/omega/sigma.json": true,
+        "./artifacts/202_003/omega/sigma.csv": true,
+        "./artifacts/202_003/omega/sigma.txt": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "202",
+    "instance_id": "202_004",
+    "template": "Create this directory structure, including all blank files specified, inside the folder './artifacts/202_004':\n- ./artifacts/202_004/omega/\n- ./artifacts/202_004/omega/delta/\n- ./artifacts/202_004/omega/logs/\n- ./artifacts/202_004/omega/logs/kappa.log\n- ./artifacts/202_004/chi/\n- ./artifacts/202_004/chi/README.md\n- ./artifacts/202_004/psi/\n- ./artifacts/202_004/psi/lambda.conf\n- ./artifacts/202_004/psi/lambda.yaml\n- ./artifacts/202_004/psi/lambda.json",
+    "expected_structure": [
+      "./artifacts/202_004/omega",
+      "./artifacts/202_004/omega/delta",
+      "./artifacts/202_004/omega/logs",
+      "./artifacts/202_004/omega/logs/kappa.log",
+      "./artifacts/202_004/chi",
+      "./artifacts/202_004/chi/README.md",
+      "./artifacts/202_004/psi",
+      "./artifacts/202_004/psi/lambda.conf",
+      "./artifacts/202_004/psi/lambda.yaml",
+      "./artifacts/202_004/psi/lambda.json"
+    ],
+    "scoring_type": "directory_structure",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "202_004",
+      "question_id": "202",
+      "passed": true,
+      "details": {
+        "./artifacts/202_004/omega": true,
+        "./artifacts/202_004/omega/delta": true,
+        "./artifacts/202_004/omega/logs": true,
+        "./artifacts/202_004/omega/logs/kappa.log": true,
+        "./artifacts/202_004/chi": true,
+        "./artifacts/202_004/chi/README.md": true,
+        "./artifacts/202_004/psi": true,
+        "./artifacts/202_004/psi/lambda.conf": true,
+        "./artifacts/202_004/psi/lambda.yaml": true,
+        "./artifacts/202_004/psi/lambda.json": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "202",
+    "instance_id": "202_005",
+    "template": "Create this directory structure, including all blank files specified, inside the folder './artifacts/202_005':\n- ./artifacts/202_005/epsilon/\n- ./artifacts/202_005/epsilon/kappa/\n- ./artifacts/202_005/epsilon/logs/\n- ./artifacts/202_005/epsilon/logs/chi.log\n- ./artifacts/202_005/omega/\n- ./artifacts/202_005/omega/README.md\n- ./artifacts/202_005/phi/\n- ./artifacts/202_005/phi/delta.conf\n- ./artifacts/202_005/phi/delta.xml\n- ./artifacts/202_005/phi/delta.txt",
+    "expected_structure": [
+      "./artifacts/202_005/epsilon",
+      "./artifacts/202_005/epsilon/kappa",
+      "./artifacts/202_005/epsilon/logs",
+      "./artifacts/202_005/epsilon/logs/chi.log",
+      "./artifacts/202_005/omega",
+      "./artifacts/202_005/omega/README.md",
+      "./artifacts/202_005/phi",
+      "./artifacts/202_005/phi/delta.conf",
+      "./artifacts/202_005/phi/delta.xml",
+      "./artifacts/202_005/phi/delta.txt"
+    ],
+    "scoring_type": "directory_structure",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "202_005",
+      "question_id": "202",
+      "passed": true,
+      "details": {
+        "./artifacts/202_005/epsilon": true,
+        "./artifacts/202_005/epsilon/kappa": true,
+        "./artifacts/202_005/epsilon/logs": true,
+        "./artifacts/202_005/epsilon/logs/chi.log": true,
+        "./artifacts/202_005/omega": true,
+        "./artifacts/202_005/omega/README.md": true,
+        "./artifacts/202_005/phi": true,
+        "./artifacts/202_005/phi/delta.conf": true,
+        "./artifacts/202_005/phi/delta.xml": true,
+        "./artifacts/202_005/phi/delta.txt": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "202",
+    "instance_id": "202_006",
+    "template": "Create this directory structure, including all blank files specified, inside the folder './artifacts/202_006':\n- ./artifacts/202_006/chi/\n- ./artifacts/202_006/chi/epsilon/\n- ./artifacts/202_006/chi/logs/\n- ./artifacts/202_006/chi/logs/sigma.log\n- ./artifacts/202_006/zeta/\n- ./artifacts/202_006/zeta/README.md\n- ./artifacts/202_006/psi/\n- ./artifacts/202_006/psi/beta.ini\n- ./artifacts/202_006/psi/beta.yaml\n- ./artifacts/202_006/psi/beta.json",
+    "expected_structure": [
+      "./artifacts/202_006/chi",
+      "./artifacts/202_006/chi/epsilon",
+      "./artifacts/202_006/chi/logs",
+      "./artifacts/202_006/chi/logs/sigma.log",
+      "./artifacts/202_006/zeta",
+      "./artifacts/202_006/zeta/README.md",
+      "./artifacts/202_006/psi",
+      "./artifacts/202_006/psi/beta.ini",
+      "./artifacts/202_006/psi/beta.yaml",
+      "./artifacts/202_006/psi/beta.json"
+    ],
+    "scoring_type": "directory_structure",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "202_006",
+      "question_id": "202",
+      "passed": true,
+      "details": {
+        "./artifacts/202_006/chi": true,
+        "./artifacts/202_006/chi/epsilon": true,
+        "./artifacts/202_006/chi/logs": true,
+        "./artifacts/202_006/chi/logs/sigma.log": true,
+        "./artifacts/202_006/zeta": true,
+        "./artifacts/202_006/zeta/README.md": true,
+        "./artifacts/202_006/psi": true,
+        "./artifacts/202_006/psi/beta.ini": true,
+        "./artifacts/202_006/psi/beta.yaml": true,
+        "./artifacts/202_006/psi/beta.json": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "202",
+    "instance_id": "202_007",
+    "template": "Create this directory structure, including all blank files specified, inside the folder './artifacts/202_007':\n- ./artifacts/202_007/sigma/\n- ./artifacts/202_007/sigma/psi/\n- ./artifacts/202_007/sigma/logs/\n- ./artifacts/202_007/sigma/logs/epsilon.log\n- ./artifacts/202_007/gamma/\n- ./artifacts/202_007/gamma/README.md\n- ./artifacts/202_007/alpha/\n- ./artifacts/202_007/alpha/kappa.txt\n- ./artifacts/202_007/alpha/kappa.xml\n- ./artifacts/202_007/alpha/kappa.csv",
+    "expected_structure": [
+      "./artifacts/202_007/sigma",
+      "./artifacts/202_007/sigma/psi",
+      "./artifacts/202_007/sigma/logs",
+      "./artifacts/202_007/sigma/logs/epsilon.log",
+      "./artifacts/202_007/gamma",
+      "./artifacts/202_007/gamma/README.md",
+      "./artifacts/202_007/alpha",
+      "./artifacts/202_007/alpha/kappa.txt",
+      "./artifacts/202_007/alpha/kappa.xml",
+      "./artifacts/202_007/alpha/kappa.csv"
+    ],
+    "scoring_type": "directory_structure",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "202_007",
+      "question_id": "202",
+      "passed": true,
+      "details": {
+        "./artifacts/202_007/sigma": true,
+        "./artifacts/202_007/sigma/psi": true,
+        "./artifacts/202_007/sigma/logs": true,
+        "./artifacts/202_007/sigma/logs/epsilon.log": true,
+        "./artifacts/202_007/gamma": true,
+        "./artifacts/202_007/gamma/README.md": true,
+        "./artifacts/202_007/alpha": true,
+        "./artifacts/202_007/alpha/kappa.txt": true,
+        "./artifacts/202_007/alpha/kappa.xml": true,
+        "./artifacts/202_007/alpha/kappa.csv": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "202",
+    "instance_id": "202_008",
+    "template": "Create this directory structure, including all blank files specified, inside the folder './artifacts/202_008':\n- ./artifacts/202_008/epsilon/\n- ./artifacts/202_008/epsilon/theta/\n- ./artifacts/202_008/epsilon/logs/\n- ./artifacts/202_008/epsilon/logs/beta.log\n- ./artifacts/202_008/omega/\n- ./artifacts/202_008/omega/README.md\n- ./artifacts/202_008/lambda/\n- ./artifacts/202_008/lambda/zeta.xml\n- ./artifacts/202_008/lambda/zeta.json\n- ./artifacts/202_008/lambda/zeta.conf",
+    "expected_structure": [
+      "./artifacts/202_008/epsilon",
+      "./artifacts/202_008/epsilon/theta",
+      "./artifacts/202_008/epsilon/logs",
+      "./artifacts/202_008/epsilon/logs/beta.log",
+      "./artifacts/202_008/omega",
+      "./artifacts/202_008/omega/README.md",
+      "./artifacts/202_008/lambda",
+      "./artifacts/202_008/lambda/zeta.xml",
+      "./artifacts/202_008/lambda/zeta.json",
+      "./artifacts/202_008/lambda/zeta.conf"
+    ],
+    "scoring_type": "directory_structure",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "202_008",
+      "question_id": "202",
+      "passed": true,
+      "details": {
+        "./artifacts/202_008/epsilon": true,
+        "./artifacts/202_008/epsilon/theta": true,
+        "./artifacts/202_008/epsilon/logs": true,
+        "./artifacts/202_008/epsilon/logs/beta.log": true,
+        "./artifacts/202_008/omega": true,
+        "./artifacts/202_008/omega/README.md": true,
+        "./artifacts/202_008/lambda": true,
+        "./artifacts/202_008/lambda/zeta.xml": true,
+        "./artifacts/202_008/lambda/zeta.json": true,
+        "./artifacts/202_008/lambda/zeta.conf": true
+      },
+      "score": 1.0
+    }
+  },
+  {
+    "question_id": "202",
+    "instance_id": "202_009",
+    "template": "Create this directory structure, including all blank files specified, inside the folder './artifacts/202_009':\n- ./artifacts/202_009/phi/\n- ./artifacts/202_009/phi/kappa/\n- ./artifacts/202_009/phi/logs/\n- ./artifacts/202_009/phi/logs/chi.log\n- ./artifacts/202_009/theta/\n- ./artifacts/202_009/theta/README.md\n- ./artifacts/202_009/alpha/\n- ./artifacts/202_009/alpha/lambda.txt\n- ./artifacts/202_009/alpha/lambda.yaml\n- ./artifacts/202_009/alpha/lambda.conf",
+    "expected_structure": [
+      "./artifacts/202_009/phi",
+      "./artifacts/202_009/phi/kappa",
+      "./artifacts/202_009/phi/logs",
+      "./artifacts/202_009/phi/logs/chi.log",
+      "./artifacts/202_009/theta",
+      "./artifacts/202_009/theta/README.md",
+      "./artifacts/202_009/alpha",
+      "./artifacts/202_009/alpha/lambda.txt",
+      "./artifacts/202_009/alpha/lambda.yaml",
+      "./artifacts/202_009/alpha/lambda.conf"
+    ],
+    "scoring_type": "directory_structure",
+    "execution_success": true,
+    "evaluation": {
+      "instance_id": "202_009",
+      "question_id": "202",
+      "passed": true,
+      "details": {
+        "./artifacts/202_009/phi": true,
+        "./artifacts/202_009/phi/kappa": true,
+        "./artifacts/202_009/phi/logs": true,
+        "./artifacts/202_009/phi/logs/chi.log": true,
+        "./artifacts/202_009/theta": true,
+        "./artifacts/202_009/theta/README.md": true,
+        "./artifacts/202_009/alpha": true,
+        "./artifacts/202_009/alpha/lambda.txt": true,
+        "./artifacts/202_009/alpha/lambda.yaml": true,
+        "./artifacts/202_009/alpha/lambda.conf": true
+      },
+      "score": 1.0
+    }
+  }
+]
