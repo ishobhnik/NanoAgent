@@ -8,14 +8,11 @@ import warnings
 import math
 from scipy import stats
 from typing import List, Dict
-
-# --- HuggingFace & LangChain Imports ---
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 from langchain_huggingface import HuggingFacePipeline, ChatHuggingFace
 from langchain_core.messages import HumanMessage, SystemMessage
 from langgraph.prebuilt import create_react_agent
 
-# --- Tools ---
 try:
     from langchain_experimental.tools import PythonAstREPLTool
 except ImportError:
@@ -23,17 +20,9 @@ except ImportError:
 
 warnings.filterwarnings("ignore")
 
-# ------------------------------------------------------------------
-# CONFIGURATION
-# ------------------------------------------------------------------
 MODEL_NAME = "google/gemma-2b-it"
 SANDBOX_DIR = "sandbox/artifacts"
-NUM_RUNS = 8  # 'R' for statistics
-
-# ------------------------------------------------------------------
-# 1. FILE DISCOVERY & GROUND TRUTH GENERATION
-# ------------------------------------------------------------------
-
+NUM_RUNS = 8 
 def get_csv_files(base_dir: str) -> List[str]:
     """Recursively finds all .csv files in the artifact directories."""
     pattern = os.path.join(base_dir, "**", "*.csv")
@@ -45,13 +34,8 @@ def get_csv_files(base_dir: str) -> List[str]:
 def calculate_gold_standard(csv_path: str) -> Dict:
     """Reads the existing CSV to establish the 'Correct Answer'."""
     try:
-        df = pd.read_csv(csv_path)
-        
-        # EXACT COLUMN MAPPING based on your input
-        # C_ID, C_NAME, AGE_YRS, LOC_CD, REG_DT
-        
+        df = pd.read_csv(csv_path)        
         if "AGE_YRS" not in df.columns:
-            # Fallback for case sensitivity
             df.columns = [c.upper() for c in df.columns]
         
         if "AGE_YRS" not in df.columns:
@@ -64,19 +48,10 @@ def calculate_gold_standard(csv_path: str) -> Dict:
     except Exception as e:
         return {"error": str(e)}
 
-# ------------------------------------------------------------------
-# 2. AGENT SETUP
-# ------------------------------------------------------------------
-
 def load_agent(model_name: str):
     print(f"Loading Model: {model_name}...")
     
-    # 1. Load Tokenizer
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    
-    # 2. FORCE A GENERIC CHAT TEMPLATE
-    # This fixes the "tokenizer.chat_template is not set" error.
-    # It structures the prompt as "System: ... User: ... Assistant: ..."
     tokenizer.chat_template = (
         "{% for message in messages %}"
         "{% if message['role'] == 'system' %}"
@@ -92,7 +67,6 @@ def load_agent(model_name: str):
         "{% endif %}"
     )
 
-    # 3. Load Model
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         torch_dtype="auto",
@@ -100,7 +74,6 @@ def load_agent(model_name: str):
         trust_remote_code=True,
     )
     
-    # 4. Create Pipeline
     pipe = pipeline(
         "text-generation",
         model=model,
@@ -109,25 +82,15 @@ def load_agent(model_name: str):
         temperature=0.01,
         do_sample=True,
         return_full_text=False,
-        # Stopping criteria helps prevent the model from rambling
         stop_token_ids=[tokenizer.eos_token_id] 
     )
     
-    # 5. Wrap in LangChain
     llm = HuggingFacePipeline(pipeline=pipe)
-    
-    # CRITICAL FIX: Pass the modified tokenizer explicitly to ChatHuggingFace
     chat_model = ChatHuggingFace(llm=llm, tokenizer=tokenizer)
-    
-    # 6. Setup Tools
     tool_locals = {"pd": pd, "os": os}
     tools = [PythonAstREPLTool(locals=tool_locals)]
     
     return create_react_agent(chat_model, tools=tools)
-
-# ------------------------------------------------------------------
-# 3. ROBUST EVALUATION LOGIC
-# ------------------------------------------------------------------
 
 def extract_and_run_code(llm_response: str, local_scope: dict) -> bool:
     """Fallback: Extracts python code blocks and runs them manually."""
@@ -144,14 +107,12 @@ def extract_and_run_code(llm_response: str, local_scope: dict) -> bool:
             exec(code, local_scope)
             success = True
         except Exception as e:
-            # Silent fail on bad blocks, try next
             continue
     return success
 
 def run_single_eval(agent_graph, csv_path: str, run_id: int) -> bool:
     filename = os.path.basename(csv_path)
 
-    # 1. Setup Paths
     abs_input_path = os.path.abspath(csv_path)
     file_dir = os.path.dirname(abs_input_path)
     output_filename = f"analysis_result_run_{run_id}.json"
@@ -160,13 +121,11 @@ def run_single_eval(agent_graph, csv_path: str, run_id: int) -> bool:
     if os.path.exists(abs_output_path):
         os.remove(abs_output_path)
 
-    # 2. Calculate Truth
     gold_standard = calculate_gold_standard(abs_input_path)
     if "error" in gold_standard:
         print(f"  [SKIP] Bad CSV: {filename} ({gold_standard['error']})")
         return False
 
-    # 3. Construct Prompts (UPDATED WITH EXACT COLUMNS)
     system_prompt = (
         "You are a Data Engineer.\n"
         "RULES:\n"
@@ -183,7 +142,6 @@ def run_single_eval(agent_graph, csv_path: str, run_id: int) -> bool:
         f"Task: Write and execute the code to generate the JSON now."
     )
 
-    # 4. Invoke Agent
     final_response_text = ""
     try:
         result = agent_graph.invoke({
@@ -197,11 +155,7 @@ def run_single_eval(agent_graph, csv_path: str, run_id: int) -> bool:
         print(f"  File: {filename} -> FAIL [CRASH] ({str(e)[:100]}...)")
         return False
 
-    # 5. VALIDATION & FALLBACK
-    
-    # Check A: Did the file get created?
     if not os.path.exists(abs_output_path):
-        # Fallback: Attempt manual execution of code blocks
         scope = {"pd": pd, "os": os}
         executed = extract_and_run_code(final_response_text, scope)
         
@@ -212,7 +166,6 @@ def run_single_eval(agent_graph, csv_path: str, run_id: int) -> bool:
                  print(f"  File: {filename} -> FAIL [NO CODE] (Agent refused to write code)")
             return False
 
-    # Check B: Validate Content
     try:
         with open(abs_output_path, 'r') as f:
             agent_data = json.load(f)
@@ -233,10 +186,6 @@ def run_single_eval(agent_graph, csv_path: str, run_id: int) -> bool:
     except Exception as e:
         print(f"  File: {filename} -> FAIL [BAD JSON] ({e})")
         return False
-
-# ------------------------------------------------------------------
-# 4. STATISTICAL METRICS
-# ------------------------------------------------------------------
 
 def print_enterprise_metrics(run_results: List[Dict]):
     """Calculates pooled accuracy, SD, RSE, and Confidence Intervals."""
@@ -274,10 +223,6 @@ def print_enterprise_metrics(run_results: List[Dict]):
     print(f"3. RSE (Uncertainty)    : {rse:.4f} ({rse*100:.1f}%)")
     print(f"4. 95% Conf. Interval   : [{ci_lower:.4f}, {ci_upper:.4f}]")
     print("="*60 + "\n")
-
-# ------------------------------------------------------------------
-# MAIN EXECUTION LOOP
-# ------------------------------------------------------------------
 
 def main():
     try:

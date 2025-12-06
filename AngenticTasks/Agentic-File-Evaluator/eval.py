@@ -7,17 +7,9 @@ import random
 import gc
 from pathlib import Path
 from typing import List, Dict, Any
-
-# --- Hugging Face and Torch Imports ---
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
-
-# --- LangChain Core Imports ---
 from langchain_core.tools import tool 
-
-# ============================================================================
-# TOOLS
-# ============================================================================
 
 @tool
 def create_directory(path: str) -> str:
@@ -106,11 +98,6 @@ def tool_to_qwen_schema(tool_obj) -> Dict[str, Any]:
 QWEN_TOOL_SCHEMAS = [tool_to_qwen_schema(t) for t in ALL_TOOLS_FUNCTIONS]
 TOOL_FUNCTION_MAP = {t.name: t.func for t in ALL_TOOLS_FUNCTIONS}
 
-
-# ============================================================================
-# TEMPLATES
-# ============================================================================
-
 class TestTemplateGenerator:
     def __init__(self, artifacts_base: str = "./artifacts"):
         self.artifacts_base = artifacts_base
@@ -169,17 +156,11 @@ class AgentEvaluator:
         passed = all(details.values())
         return {"passed": passed, "details": details, "score": 1.0 if passed else 0.0}
 
-
-# ============================================================================
-# AGENT
-# ============================================================================
-
 class FileSystemAgent:
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct"):
         self.device = "cpu"
         print(f"\n🔧 Initializing {model_name} on {self.device.upper()}...")
         
-        # CHANGED: Use float16 to save memory (Fixes OOM on 6GB cards)
         dtype = torch.float16 if self.device == "cuda" else torch.float32
         
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -206,33 +187,23 @@ class FileSystemAgent:
                     messages, tokenize=False, add_generation_prompt=True, tools=self.tool_schemas
                 )
                 
-                inputs = self.tokenizer([prompt], return_tensors="pt").to(self.model.device)
-                
-                # Generate
+                inputs = self.tokenizer([prompt], return_tensors="pt").to(self.model.device)                
                 with torch.no_grad():
                     generated_ids = self.model.generate(
                         **inputs, max_new_tokens=512, do_sample=False, temperature=0.0
                     )
                 
                 output = self.tokenizer.decode(generated_ids[0, inputs["input_ids"].shape[1]:], skip_special_tokens=True).strip()
-                
-                # --- PARSING FIXES ---
-                # 1. Clean up XML tags often emitted by Qwen (e.g. <tool_call>)
                 clean_output = re.sub(r'<[^>]+>', '', output).strip()
-                
-                # 2. Find JSON anywhere in the string
-                # This finds the first { ... } block
                 match = re.search(r'(\{.*\})', clean_output, re.DOTALL)
                 
                 if not match:
-                    # Fallback: Look for json inside markdown blocks
                     match = re.search(r'```json\s*(\{.*?\})\s*```', output, re.DOTALL)
 
                 tool_found = False
                 if match:
                     try:
                         json_str = match.group(1)
-                        # Attempt to sanitize common bad JSON (e.g., trailing commas)
                         json_str = json_str.replace("'", '"') 
                         
                         tool_call_data = json.loads(json_str)
@@ -250,7 +221,6 @@ class FileSystemAgent:
                             messages.append({"role": "assistant", "content": output})
                             messages.append({"role": "tool", "content": tool_output, "name": tool_name})
                     except Exception as e:
-                        # Parsing failed, but maybe it wasn't a tool call
                         pass 
 
                 if not tool_found:
@@ -261,10 +231,6 @@ class FileSystemAgent:
                 return {"success": False, "error": str(e)}
         
         return {"success": True, "output": final_output}
-
-# ============================================================================
-# MAIN
-# ============================================================================
 
 def main():
     generator = TestTemplateGenerator()
@@ -277,13 +243,11 @@ def main():
 
     evaluator = AgentEvaluator()
     
-    # 20 samples
     tasks = generator.generate_task_201(10) + generator.generate_task_202(10)
     
     print(f"Running {len(tasks)} tasks...")
     
     for idx, task in enumerate(tasks):
-        # Memory Cleanup: Critical for 6GB GPU
         gc.collect()
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
@@ -291,13 +255,12 @@ def main():
         shutil.rmtree(f"./artifacts/{task['instance_id']}", ignore_errors=True)
         
         print(f"\n--- Task {idx+1}: {task['instance_id']} ---")
-        # print(f"Goal: {task['template']}")
         
         res = agent.execute_task(task["template"])
         
         if res["success"]:
             eval_res = evaluator.evaluate_task(task)
-            print(f"Result: {'✅ PASSED' if eval_res['passed'] else '❌ FAILED'}")
+            print(f"Result: {'PASSED' if eval_res['passed'] else 'FAILED'}")
         else:
             print(f"Error: {res['error']}")
 
