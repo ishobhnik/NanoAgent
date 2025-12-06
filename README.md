@@ -2,9 +2,9 @@
 
 NanoAgent is a lightweight, modular framework designed to evaluate the agentic and reasoning capabilities of Small Language Models (SLMs).
 
-This project is developed under Salesforce by a team of [Rajdeep](https://github.com/RajdeepBakolia2004/), [Krishna](https://github.com/krishna16032005), and [Shobhnik](https://ishobhnik.github.io/) with the goal of designing and evaluating language models on industry-specific agentic tasks such as finance.
-
 While massive models (LLMs) dominate general chat, NanoAgent focuses on benchmarking efficient, local models (like Google's Gemma-2B and Alibaba's Qwen-1.5B) on specific enterprise tasks: data engineering, file system manipulation, financial QA, and entity extraction.
+
+This project is developed under Salesforce by a team of [Rajdeep](https://github.com/RajdeepBakolia2004/), [Krishna](https://github.com/krishna16032005), and [Shobhnik](https://ishobhnik.github.io/) with the goal of designing and evaluating language models on industry-specific agentic tasks such as finance.
 
 ## Key Features
 
